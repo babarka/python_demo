@@ -1,0 +1,14 @@
+# Install process for Anaconda & libraries
+
+# Download anaconda from:
+# http://continuum.io/downloads#all
+# Figure out which directory to install,
+#  for the demo, we use /home/cloudera/anaconda
+
+# Install the following libraries:
+# impyla, from install location bin:
+./pip install impyla
+# ibis, from install location
+./pip install ibis-framework
+
+

@@ -11,3 +11,7 @@ hdfs dfs -put ./data/german_credit.csv /user/cloudera/german/
 
 # Run hive script to create table on text file and a copy in parquet
 hive -f ./hive/00_create_tables.hql
+
+# ensure that table is accessible in impala
+impala-shell -q 'invalidate metadata default.german'
+impala-shell -q 'invalidate metadata default.german_parquet'
