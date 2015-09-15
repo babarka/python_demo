@@ -1,5 +1,5 @@
-# remove & add tables for german data 
-# requires german data to already be loaded in hdfs
+-- remove & add tables for german data 
+-- requires german data to already be loaded in hdfs
 
 CREATE EXTERNAL TABLE IF NOT EXISTS default.german (
     cred        INT COMMENT "0  response   - Creditability",
