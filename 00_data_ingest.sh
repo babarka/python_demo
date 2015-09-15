@@ -10,4 +10,4 @@ hdfs dfs -mkdir /user/cloudera/german
 hdfs dfs -put ./data/german_credit.csv /user/cloudera/german/
 
 # Run hive script to create table on text file and a copy in parquet
-
+hive -f ./hive/00_create_tables.hql
